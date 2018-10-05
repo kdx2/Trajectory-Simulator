@@ -7,4 +7,4 @@ There are two ways:
 2. For the full version you should try to serve the project folder with e.g. Apache or NodeJs and then "click on the 'Trajectory Simulator.html'" :)
 
 ### Sneak Peeks
-![alt text](https://photos.app.goo.gl/VqtpySL58kY7evUG6)
+[![Git_Cropped.jpg](https://i.postimg.cc/dV8gbCkZ/Git_Cropped.jpg)](https://postimg.cc/NKjNT5xQ)
