@@ -1,4 +1,4 @@
-# Trajectory-Simulator
+# Trajectory Simulator
 A small JavaScript based browser-application with some integrated speech control. I must have written it around 2015.
 The project is literally my first ever script in JavaScript, I did it for fun aand 
 ### Usage
@@ -22,5 +22,5 @@ decrease gravity (or) gravity down
 shoot (to launch the projectile)
 stop (to stop the increasement or decreasement of a command)
 
-### Sneak Peeks
+### Sneak Peeks:
 [![Git_Cropped.jpg](https://i.postimg.cc/dV8gbCkZ/Git_Cropped.jpg)](https://postimg.cc/NKjNT5xQ)
