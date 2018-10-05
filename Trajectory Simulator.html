@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trajectory Simulator</title> 
+  
+  <script type="text/javascript" src="./lib/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+  <script type="text/javascript" src="./lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./lib/annyang/annyang.min.js"></script>
+  <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src='./lib/GSAP/CSSPlugin.min.js'></script>
+  <script type="text/javascript" src='./lib/GSAP/TweenLite.min.js'></script>
+
+  <script type="text/javascript" src="./js/voiceControl.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+
+
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="./lib/jquery-ui-1.11.4.custom/jquery-ui.min.css"/> 
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/css/bootstrap-dialog.min.css"/>
+
+ </head>
+
+ <body onload="titleanim(), servcheck()">
+  <header class='centerthem'><h1 id='traj' class="title"> Trajectory </h1><h1 id='simu' class="title">Simulator</h1></header>
+  <div class="row-fluid toprowbuffer">
+    <div class="col-md-2 col-md-offset--2">
+      <span class="slider-warper">
+        <label class="label">Angle:</label><div id="slangle" class="slider"></div>
+          <input type="text" id="angle" value="15" />
+        </snap>
+
+        <span class="slider-warper">
+          <label class="label">Speed:</label><div id="slspeed" class="slider"></div>
+            <input type="text" id="speed" value="50" />
+        </span>
+              
+        <br>  
+            <span class="slider-warper">
+            <label class="label">Gravity:</label><div id="slgravity" class="slider"></div>
+              <input type="text" id="gravity" value="10" />
+              </span>
+
+            <br><br><br><br><br>
+            <button id="fire" class="button">Launch</button>
+            <input type="button" id='VC' class="button" value="Voice control"></input>
+
+   
+    </div>
+      
+    <div class="col-md-1"/>
+
+    </div>
+      <div id="frames" class="col-md-8  container" onmousemove="coordinates(event)" onmouseout="clearcoords()" onclick="saveOO(event), coords4lines(event)" >
+      <div class='wrapper'>
+      <canvas id='line' width='1280' height='720'></canvas></div>
+      <!--<center><p id="coords"> </p></center> //-->
+      <!--<div id="bracket"></div> //--> 
+
+      <span id="ball">
+        <img src="./assets/ball.png" class="img-responsive" heigth='30' width='30'/>
+      </span> 
+    </div>
+  </div>
+</div>
+  <p id="saved" align="centere"></p>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Oops! Voice Control is temporarily unavailable</h4>
+      </div>
+      <div class="modal-body">
+        <p>In order to use the Voice Control functions, please make sure you run the app through a server.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class='container-fluid'>
+  <div class='span12'>
+<div class="alert alert-info fade out" id="bsalert">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Info!</strong> Make sure the app is running through a server, in order to use the Voice Control.
+</div>
+</div>
+</div>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target="#MiniMenu">
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class="navbar-brand" href="#">Trajectory Simulator</a>
+    </div>
+    <div>
+      <div class='collapse navbar-collapse' id='MiniMenu'>
+       <ul class="nav navbar-nav">
+        <li class="dropup"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Scenes<span class="caret"/></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Basic Trajectory</a></li>
+            <li><a href="#">Space Trajectory</a></li>
+          </ul>
+        </li>
+            <li class="active"><a href="#">Settings</a></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  </body>
+</html>
