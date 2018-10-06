@@ -15,16 +15,19 @@ where you can change that for 8080, 4300 or any other of preference, or just lea
 
 ### Here is the dictionary of the recognized voice commands:
 *angle up* /
-*angle down* - this will start increasing or decreasing the angle.
+*angle down* -> this will start increasing or decreasing the angle.
 
 *increase speed* / *speed up*
-*decrease speed* / *speed down* - likewise the speed of the projectile.
+
+*decrease speed* / *speed down* -> likewise the speed of the projectile.
 
 *increase gravity* (or) *gravity up*
-*decrease gravity* (or) *gravity down* - likewise the gravity
 
-*shoot* (to launch the projectile) - fires the projectile down its set-up trajectory.
-*stop* (to stop the increasement or decreasement of a command)
+*decrease gravity* (or) *gravity down* -> likewise the gravity
+
+*shoot* (to launch the projectile) -> fires the projectile down its set-up trajectory.
+
+*stop* -> to stop any previous voice command
 
 Feel free to click anywhere on the 'blueprint' to add a point from which you would like the ball to be launched.
 
