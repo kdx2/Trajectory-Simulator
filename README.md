@@ -21,15 +21,17 @@ where you can change that for 8080, 4300 or any other of preference, or just lea
 
 *decrease speed* / *speed down* -> likewise the speed of the projectile.
 
+
 *increase gravity* (or) *gravity up*
 
 *decrease gravity* (or) *gravity down* -> likewise the gravity
+
 
 *shoot* (to launch the projectile) -> fires the projectile down its set-up trajectory.
 
 *stop* -> to stop any previous voice command
 
-Feel free to click anywhere on the 'blueprint' to add a point from which you would like the ball to be launched.
+Feel free to click anywhere on the 'blueprint' to insert the point from which you would like the ball to be launched.
 
 
 ### A Screenshot:
