@@ -4,7 +4,7 @@ The project is literally my first ever script in JavaScript, I did it for fun.
 ### Usage:
 There are two ways:
 1. Just click on the 'Trajectory Simulator.html' and let it load. A downside is, in this case the voice control won't work.
-2. For the full version you should try to serve the project folder with e.g. Apache or NodeJs and then "click on the 'Trajectory Simulator.html'" :)
+2. For the full version you should try to serve the project folder with e.g. Apache or NodeJs and then "click on the 'Trajectory Simulator.html'" and run it in **Google Chrome!** :)
 
 ### Here is the dictionary of the recognized voice commands:
 angle up
